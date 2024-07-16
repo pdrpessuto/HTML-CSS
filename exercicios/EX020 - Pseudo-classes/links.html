@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            Simbologias para CSS - Criando seletores personalizados
+            # = id
+            . = class
+            : = pseudoclass
+            :: = pseudoelemente
+            > = children
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+
+        a:visited{ /*Se eu já visitei o site*/
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;   
+        }
+
+        a:active{ /* Quando clicar no elemento uma ação é realizada*/
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgba(255, 3, 3, 0.49);
+        }
+
+        .especial::after{/*PseudoElementos são separados por :: Não inseri esses elementos no Texto por isso psudo elementos*/
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkred;
+        }
+
+        .especial::before{
+            content: '⇒';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkred;
+        }
+        
+        /*Pseudo Elementos funcionam para os IDs e para as classes*/
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial" target="_blank" >Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Curso em Vídeo</a></li>
+
+    </ul>
+    
+</body>
+</html>

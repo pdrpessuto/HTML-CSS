@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*
+em HTML é id = em CSS é # (só pode um elemento)
+em HTML é class = em CSS é . (pode vários elementos)
+*/
+
+body{
+    background-color:#73e25a66;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:#3F7C32;
+}
+
+#principal {
+    text-align: center;
+    background-color:#2E5A24 ;
+    color: white;
+}
+
+h2{
+    color:#519E3F;
+}
+
+.basico{
+    color: rgb(2, 162, 2);
+    font-weight: bolder;
+
+}
+
+.intermediario{
+    color: rgb(158, 158, 1);
+
+}
+
+.avançado{
+    color: rgb(144, 4, 4);
+
+
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.23);
+}
+
+/*Id sempre sobrepoe o class
+Esses seletores sempre herdam o que vem da camada acima H1 --> ID --> CLASS
+Posso ter mais de uma classe em uma tag
+Posso ter ID e class no mesmo seletor tbm */

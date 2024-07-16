@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-style: italic;
+            font-weight: bolder;
+            text-decoration: none;/*underline*/
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas
+            cm, mm, in, px(recomendado pela W3C, 16px é o tamanho normal das fontes já), pt, pc
+            
+            Medidas Relativas
+            em(recomendado pela W3C), ex, rem, vw, vh, %
+            16px = 1 em*/
+            font-size: 1em; /*Porcentagem da fonte padrão*/
+            font-weight: 900; /*100 até 900 ou lighter normal bold bolder*/
+            font-style: italic; /*normal ou italic*/
+            text-decoration: none;
+
+            /* shorthand font
+            A ordem deve ser seguida conforme anotação abaixo
+            - font-style -> font-weight -> font-size -> font-family
+            Exemplo de código:
+            font:italic bolder 3em 'sans-serif'
+            */
+            
+        }
+        h2{
+            font: bold 2em 'sans-serif'
+
+
+        }
+        
+
+        
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique optio voluptate molestias quaerat iure, recusandae quos libero ullam! Suscipit error soluta nostrum esse nobis ipsam mollitia magnam, tempore odio reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque amet nostrum labore excepturi rerum consequuntur voluptas fugit, rem maiores consectetur recusandae adipisci aspernatur sunt tenetur fugiat id, sit non tempore.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime voluptatibus aliquid cumque saepe, molestiae possimus sunt ipsum nisi nam voluptates accusamus voluptatem deserunt fuga culpa sapiente nihil corporis beatae dolores.</p>
+
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempore accusantium nesciunt quidem quisquam, velit nam numquam sint incidunt accusamus ratione ipsa officia iure cupiditate non hic praesentium, voluptates labore.</p>
+    
+</body>
+</html>

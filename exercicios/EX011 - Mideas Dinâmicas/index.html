@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinâmica</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <p>Utilizamos a Tag <strong>picture</strong> para fazer o dimensionamento de imagens. Importante lembrar que a lógica utilizando a tag <strong>source</strong> deve ser obedecida seguindo a lógica de que a primeira linha deve conter a menor imagem.</p>
+
+    <picture><!--Tag picture faz o efeito de imagem dinâmica. Importante lembrar que a lógica pede a linha inicial com a tag source da menor imagem, e assim que for aumentando segue a sequencia das linhas-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" 
+        srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png"alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop><!-- comando autoplay é para abrir o site e começar a tocar o audio. Controls é para exibir os controladores de audio do site. Preload é o que vc quer q carregue do audio quando a pagina é carregada (auto;/metadata/none). Loop é para repetir o audio quando acabar-->
+        <source src="midea/audio.mp3" type="audio/mpeg">
+        <source src="midea/audio.ogg" type="audio/ogg">
+        <source src="midea/audio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compatível com os formatos de audio disponibilizados<a href="midea/audio.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!--Caso nem um formato carregue em seu navegador, a mensagem contida na tag p será exibida-->
+        
+    </audio> <!--Formatos de audio compatível MP3 WAV OGG-->
+
+    
+</body>
+</html>
